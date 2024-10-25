@@ -3,7 +3,12 @@ QUANT_SEGUNDOS_DIA = 86400
 QUANT_SEGUNDOS_HORA = 3600
 QUANT_SEGUNDOS_MINUTO = 60
 
-#def total_segundos(dias, horas, minutos, segundos)
+# Função para somar total de segundos em dados dias, horas, minutos e segundos
+def total_segundos(dias, horas, minutos, segundos):
+    return (QUANT_SEGUNDOS_DIA * dias +
+                 QUANT_SEGUNDOS_HORA * horas +
+                 QUANT_SEGUNDOS_MINUTO * minutos +
+                 segundos)
 
 # Todos os inputs que o usuário vai dar
 dia_ini_string = input()
@@ -33,14 +38,8 @@ minuto_fim = int(split_aux[2])
 segundo_fim = int(split_aux[4])
 
 # Somando as quantidades de segundos no total para início e para fim
-quant_seg_ini = (QUANT_SEGUNDOS_DIA * dia_ini +
-                 QUANT_SEGUNDOS_HORA * hora_ini +
-                 QUANT_SEGUNDOS_MINUTO * minuto_ini +
-                 segundo_ini)
-quant_seg_fim = (QUANT_SEGUNDOS_DIA * dia_fim +
-                 QUANT_SEGUNDOS_HORA * hora_fim +
-                 QUANT_SEGUNDOS_MINUTO * minuto_fim +
-                 segundo_fim)
+quant_seg_ini = total_segundos(dia_ini, hora_ini, minuto_ini, segundo_ini)
+quant_seg_fim = total_segundos(dia_fim, hora_fim, minuto_fim, segundo_fim)
 quant_seg_total = quant_seg_fim - quant_seg_ini  # Diferença em segundos de fim e início
 
 quantidades = [0,0,0,0]
