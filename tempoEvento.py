@@ -25,17 +25,18 @@ split_aux = dia_fim_string.split(" ")
 dia_fim = int(split_aux[1])
 
 # Processando horários
+# Ainda estão como strings, precisa converter para int para fazer os cálculos
 # Horário de início
-split_aux = horario_ini_string.split(" ") # 08 : 30 : 40 -> ["08", ":", "30", ":", "40"]
-hora_ini = int(split_aux[0])  # Ainda estão como strings, precisa converter para int para fazer os cálculos
-minuto_ini = int(split_aux[2])
-segundo_ini = int(split_aux[4])
+split_aux = horario_ini_string.split(" : ") # 08 : 30 : 40 -> ["08", "30", "40"]
+hora_ini = int(split_aux[0])
+minuto_ini = int(split_aux[1])
+segundo_ini = int(split_aux[2])
 
 # Horário de fim
-split_aux = horario_fim_string.split(" ")
+split_aux = horario_fim_string.split(" : ")
 hora_fim = int(split_aux[0])
-minuto_fim = int(split_aux[2])
-segundo_fim = int(split_aux[4])
+minuto_fim = int(split_aux[1])
+segundo_fim = int(split_aux[2])
 
 # Somando as quantidades de segundos no total para início e para fim
 quant_seg_ini = total_segundos(dia_ini, hora_ini, minuto_ini, segundo_ini)
