@@ -5,13 +5,15 @@
 **Inteiro** *Horas Fim*, *Minutos Fim*, *Segundos Fim* <- mapear(*Horário Fim*)
 
 **Inteiro** *Total segundos início* <- <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*Horas início* x 86400 + <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*Minutos Início* x 3600 + <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*Dias início* x 86400 + <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*Horas início* x 3600 + <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*Minutos Início* x 60 + <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*Segundos Início* <br>
 
 **Inteiro** *Total segundos Fim* <- <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*Horas Fim* x 86400 + <br>
-&nbsp;&nbsp;&nbsp;&nbsp;*Minutos Fim* x 3600 + <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*Dias Fim* x 86400 + <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*Horas Fim* x 3600 + <br>
+&nbsp;&nbsp;&nbsp;&nbsp;*Minutos Fim* x 60 + <br>
 &nbsp;&nbsp;&nbsp;&nbsp;*Segundos Fim* <br>
 
 **Inteiro** *Total Segundos* <- *Total segundos Fim* - *Total segundos início*  
