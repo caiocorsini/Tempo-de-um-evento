@@ -27,7 +27,7 @@ dia_fim = int(split_aux[1])
 
 # Processando horários
 # Ainda estão como strings, precisa converter para int para fazer os cálculos
-# EXEMPLO CONVERSÃO - 08 : 30 : 40 -> ["08", "30", "40"]
+# EXEMPLO CONVERSÃO - 08 : 30 : 40 -> [8, 3, 4]
 # Horário de início
 hora_ini, minuto_ini, segundo_ini = map(int, horario_ini_string.split(" : "))
 
