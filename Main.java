@@ -1,4 +1,6 @@
-// https://judge.beecrowd.com/pt/problems/view/1061
+// Beecrowd - Problema 1061 - Tempo de um Evento
+// Autor: Caio Vinicius Corsini Filho
+
 import java.util.Scanner;
 public class Main {
     // Constantes de quantidades de segundos

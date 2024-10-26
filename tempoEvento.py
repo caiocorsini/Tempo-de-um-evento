@@ -1,3 +1,6 @@
+# Beecrowd - Problema 1061 - Tempo de um Evento
+# Autor: Caio Vinicius Corsini Filho
+
 # Constantes de quantidades de segundos
 # Escolhi converter tudo especificamente para segundos para não ter que trabalhar com floats
 QUANT_SEGUNDOS_DIA = 86400
