@@ -27,7 +27,7 @@ Enquanto *Total Segundos* for maior que 0
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Total Segundos* <- *Total Segundos* - *valores*[i]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *quantidades*[i] <- incrementar *quantidades*[i]  
 &nbsp;&nbsp;&nbsp;&nbsp; Senão  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; decrementar i  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; incrementar i  
 
 Imprimir (*quantidades*[0], "dia(s)")  
 Imprimir (*quantidades*[1], "hora(s)")  
